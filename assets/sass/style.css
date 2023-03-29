@@ -1,11 +1,4 @@
 /* General settings */
-::-moz-placeholder {
-  color: #353535;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  font-family: roboto;
-}
 ::placeholder {
   color: #353535;
   font-size: 16px;
@@ -18,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* MobileFirst */
@@ -105,25 +103,57 @@ header {
   background-color: #F7F7F7;
   padding: 50px 15px 50px 15px;
 }
-.restaurants__title {
+.restaurants h1 {
   padding-left: 5px;
 }
 .restaurants .results {
   width: 100%;
 }
-.restaurants .results__cards {
+.restaurants .results .cards {
   height: 251px;
   width: 100%;
   background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
-.restaurants .results__cards img {
+.restaurants .results .cards__image {
   height: 66%;
   width: 100%;
+  border-radius: 15px 15px 0 0;
+  position: relative;
 }
-.restaurants .results__cards h2 {
+.restaurants .results .cards img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .results .cards h2 {
   margin: 0;
   font-size: 18px;
+  padding-bottom: 5px;
 }
-.restaurants .results__cards p {
+.restaurants .results .cards p {
   margin: 0;
+  font-size: 17px;
+}
+.restaurants .results .cards__details {
+  padding: 16px 4% 12px 4%;
+  height: 33%;
+}
+.restaurants .results .cards__details .icon {
+  display: flex;
+  align-items: center;
+}
+.restaurants .results .cards__nouveau {
+  height: 29px;
+  width: 80px;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }/*# sourceMappingURL=style.css.map */
