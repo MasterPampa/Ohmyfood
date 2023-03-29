@@ -1,0 +1,129 @@
+/* General settings */
+::-moz-placeholder {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-family: roboto;
+}
+::placeholder {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  font-family: roboto;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MobileFirst */
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+header {
+  height: 63px;
+}
+
+.navBar {
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0 8px 7px -7px rgba(0, 0, 0, 0.15);
+}
+.navBar__searchBar {
+  border: none;
+  background-color: #EAEAEA;
+  width: 40%;
+}
+.navBar .fa-location-dot {
+  color: #353535;
+}
+
+.intro {
+  text-align: center;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.intro p {
+  color: #353535;
+  margin: 0;
+  padding-bottom: 27px;
+}
+.intro .button {
+  width: 60%;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.intro .button--rounded {
+  border-radius: 25px;
+  border: none;
+}
+.intro .button--pink {
+  background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+.intro .button--shadow {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.fonctionnement {
+  margin: 0 20px;
+}
+.fonctionnement__title {
+  margin-top: 48px;
+  margin-bottom: 26px;
+}
+.fonctionnement .menu {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.fonctionnement .menu__button {
+  width: 90%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement .menu__button .icon {
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.restaurants {
+  background-color: #F7F7F7;
+  padding: 50px 15px 50px 15px;
+}
+.restaurants__title {
+  padding-left: 5px;
+}
+.restaurants .results {
+  width: 100%;
+}
+.restaurants .results__cards {
+  height: 251px;
+  width: 100%;
+  background-color: white;
+}
+.restaurants .results__cards img {
+  height: 66%;
+  width: 100%;
+}
+.restaurants .results__cards h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.restaurants .results__cards p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
