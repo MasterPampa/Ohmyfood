@@ -1,4 +1,4 @@
-/* General settings */
+/* General settings #######################################*/
 ::placeholder {
   color: #353535;
   font-size: 16px;
@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-/* MobileFirst */
+/* MobileFirst ###############################*/
 body {
   margin: 0;
   font-family: Roboto;
@@ -46,8 +46,7 @@ header {
   text-align: center;
   flex-direction: column;
   background-color: #F7F7F7;
-  padding-bottom: 50px;
-  padding-top: 20px;
+  padding: 20px 30px 50px 30px;
 }
 .intro p {
   color: #353535;
@@ -66,7 +65,7 @@ header {
   border: none;
 }
 .intro .button--pink {
-  background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 .intro .button--shadow {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -108,26 +107,35 @@ header {
 }
 .restaurants .results {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .restaurants .results .cards {
-  height: 251px;
+  height: 250px;
   width: 100%;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 .restaurants .results .cards__image {
   height: 66%;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .restaurants .results .cards img {
   width: 100%;
-  height: 100%;
+  top: -22%;
   border-radius: 15px 15px 0 0;
+  position: relative;
 }
 .restaurants .results .cards h2 {
   margin: 0;
@@ -140,7 +148,7 @@ header {
 }
 .restaurants .results .cards__details {
   padding: 16px 4% 12px 4%;
-  height: 33%;
+  color: black;
 }
 .restaurants .results .cards__details .icon {
   display: flex;
@@ -156,4 +164,27 @@ header {
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 2;
+}
+
+.footer {
+  padding: 22px 25px;
+  background-color: #353535;
+}
+.footer img {
+  filter: brightness(100);
+  width: 30%;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.footer__links {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 7px;
+}
+.footer__links .icon {
+  padding-right: 11px;
 }/*# sourceMappingURL=style.css.map */

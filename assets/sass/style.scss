@@ -1,9 +1,14 @@
-/* General settings */
+/* General settings #######################################*/
 
 $darkGreyFont:#353535;
 $lightGreyBackground:#F7F7F7;
 $greyBackground:#EAEAEA;
 $mainPurple:#9356DC;
+
+@mixin gradientBackground{
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
 
 ::placeholder {
     color: $darkGreyFont;
@@ -22,7 +27,7 @@ $mainPurple:#9356DC;
     justify-content: space-between;
 }
 
-/* MobileFirst */
+/* MobileFirst ###############################*/
 
 body{
     margin: 0;
@@ -48,8 +53,7 @@ header{
     text-align: center;
     flex-direction: column;
     background-color: $lightGreyBackground;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding: 20px 30px 50px 30px;
     p{
         color: $darkGreyFont;
         margin: 0;
@@ -66,7 +70,7 @@ header{
             border: none;
         }
         &--pink{
-            background: linear-gradient(0deg, #9356DC -5.2%, #FF79DA 110.74%);
+            @include gradientBackground; 
         }
         &--shadow{
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -107,24 +111,33 @@ header{
     }
     .results{
         width: 100%;
+        display: flex;
+        flex-direction: column;
        .cards{
-            height: 251px;
+            height: 250px;
             width: 100%;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
+            text-decoration: none;
+            margin-bottom: 20px;
             &__image{
                 height: 66%;
                 width: 100%;
                 border-radius: 15px 15px 0 0;
                 position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
             }
             img{
                 width: 100%;
-                height: 100%;
+                top: -22%;
                 border-radius: 15px 15px 0 0;
+                position: relative;
             }
             h2{
                 margin: 0;
@@ -137,10 +150,12 @@ header{
             }
             &__details{
                 padding: 16px 4% 12px 4%;
-                height: 33%;
+                color: black;
                 .icon{
                     display: flex;
                     align-items: center;
+                    &--fav{
+                    }
                 }
             }
             &__nouveau{
@@ -153,7 +168,30 @@ header{
                 position: absolute;
                 top: 15px;
                 right: 15px;
+                z-index: 2;
             }
+        }
+    }
+}
+.footer{
+    padding: 22px 25px;
+    background-color: $darkGreyFont;
+
+    img{
+        filter: brightness(100);
+        width: 30%;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    &__links{
+        color: white;
+        text-decoration: none;
+        padding-bottom: 7px;
+        .icon{
+            padding-right: 11px;
         }
     }
 }
