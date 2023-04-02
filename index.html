@@ -3,6 +3,7 @@
     <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/sass/animations.css">
 		<link rel="stylesheet" type="text/css" href="assets/sass/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 		<script src="https://kit.fontawesome.com/273c7a012c.js" crossorigin="anonymous"></script>
     </head>
+	
 	<body>
 		<header class="flexCenter">
 			<img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
@@ -21,7 +23,7 @@
 		<article class="intro flexCenter">
 			<h1>Réservez le menu qui vous convient</h1>
 			<p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-			<a href="#" class="button button--rounded button--pink button--shadow flexCenter">Explorez nos restaurants</a>
+			<a href="#" class="button button--rounded button--pink flexCenter">Explorez nos restaurants</a>
 		</article>
 		<section class="fonctionnement">
 			<h1 class="fonctionnement__title">Fonctionnement</h1>
@@ -42,7 +44,10 @@
 					<div class="cards__details">
 						<div class="spaceBetween">
 							<h2>La palette du goût</h2>
-							<i class="icon fa-regular fa-heart fa-xl"></i>
+							<span class="pos fa-stack fa-1x">
+								<i class="icon fa-solid fa-heart fa-xl fav"></i>
+								<i class="icon fa-regular fa-heart fa-xl notFav"></i>
+							</span>
 						</div>
 						<p>Ménilmontant</p>
 					</div>
@@ -55,7 +60,10 @@
 					<div class="cards__details">
 						<div class="spaceBetween">
 							<h2>La note enchantée</h2>
-							<i class="icon fa-regular fa-heart fa-xl icon--fav"></i>
+							<span class="pos fa-stack fa-1x">
+								<i class="icon fa-solid fa-heart fa-xl fav"></i>
+								<i class="icon fa-regular fa-heart fa-xl notFav"></i>
+							</span>
 						</div>
 						<p>Charonne</p>
 					</div>
@@ -67,7 +75,10 @@
 					<div class="cards__details">
 						<div class="spaceBetween">
 							<h2>À la française</h2>
-							<i class="icon fa-regular fa-heart fa-xl icon--fav"></i>
+							<span class="pos fa-stack fa-1x">
+								<i class="icon fa-solid fa-heart fa-xl fav"></i>
+								<i class="icon fa-regular fa-heart fa-xl notFav"></i>
+							</span>
 						</div>
 						<p>Cité Rouge</p>
 					</div>
@@ -79,7 +90,10 @@
 					<div class="cards__details">
 						<div class="spaceBetween">
 							<h2>Le délice des sens</h2>
-							<i class="icon fa-regular fa-heart fa-xl icon--fav"></i>
+							<span class="pos fa-stack fa-1x">
+								<i class="icon fa-solid fa-heart fa-xl fav"></i>
+								<i class="icon fa-regular fa-heart fa-xl notFav"></i>
+							</span>
 						</div>
 						<p>Folie-Méricourt</p>
 					</div>
@@ -94,7 +108,7 @@
 					<a class="footer__links" href="#">Mentions légales</a>
 					<a class="footer__links" href="#">Contact</a>
 				</div>
-		</footer>
+		</footer>		  
 	</body>
 </html>
 

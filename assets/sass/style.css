@@ -65,10 +65,7 @@ header {
   border: none;
 }
 .intro .button--pink {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-.intro .button--shadow {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(1deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .fonctionnement {
@@ -153,6 +150,12 @@ header {
 .restaurants .results .cards__details .icon {
   display: flex;
   align-items: center;
+}
+.restaurants .results .cards__details .pos {
+  position: relative;
+  top: 15px;
+  height: 22px;
+  width: 22px;
 }
 .restaurants .results .cards__nouveau {
   height: 29px;

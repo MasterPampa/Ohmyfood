@@ -1,0 +1,26 @@
+.button{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    transition: 0.5s;
+    &:hover{
+        filter: brightness(115%);
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.35);
+    }
+}
+
+.pos{
+    &:hover > .fav{
+        filter: opacity(100);
+    }
+    &:hover > .notFav{
+        filter: opacity(0);
+    }
+}
+.fav{
+    transition: 1s;
+    color: red;
+    filter: opacity(0);
+}
+.notFav{
+    transition: 1s;
+    filter: opacity(100);
+}
