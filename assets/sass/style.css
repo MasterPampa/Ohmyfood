@@ -24,37 +24,51 @@ body {
   font-family: Roboto;
 }
 
-header {
-  height: 63px;
+.header {
+  flex-direction: column;
+  height: 115px;
+  width: 100%;
 }
-
-.navBar {
-  height: 50px;
+.header a {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 60%;
+}
+.header .navBar {
+  width: 100%;
+  height: 40%;
   background-color: #EAEAEA;
   box-shadow: inset 0 8px 7px -7px rgba(0, 0, 0, 0.15);
 }
-.navBar__searchBar {
+.header .navBar__searchBar {
+  width: 30%;
   border: none;
   background-color: #EAEAEA;
-  width: 40%;
 }
-.navBar .fa-location-dot {
+.header .navBar .fa-location-dot {
   color: #353535;
 }
 
 .intro {
+  height: 287px;
   text-align: center;
   flex-direction: column;
+  justify-content: space-evenly;
   background-color: #F7F7F7;
   padding: 20px 30px 50px 30px;
 }
 .intro p {
+  font-size: 18px;
   color: #353535;
   margin: 0;
   padding-bottom: 27px;
 }
+.intro h1 {
+  font-size: 24px;
+}
 .intro .button {
-  width: 60%;
+  width: 218px;
   height: 50px;
   font-size: 16px;
   color: white;
@@ -79,8 +93,10 @@ header {
   flex-direction: column;
   margin-bottom: 40px;
 }
+.fonctionnement .menu article {
+  width: 100%;
+}
 .fonctionnement .menu__button {
-  width: 90%;
   height: 72px;
   display: flex;
   align-items: center;
@@ -190,4 +206,64 @@ header {
 }
 .footer__links .icon {
   padding-right: 11px;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    max-height: 34px;
+  }
+  .header .navBar__searchBar {
+    width: 10%;
+  }
+  main .intro {
+    padding: 0px 20% 50px 20%;
+    height: 239px;
+  }
+  main .intro h1 {
+    font-size: 40px;
+  }
+  main .intro p {
+    font-size: 18px;
+  }
+  main .fonctionnement .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .fonctionnement .menu article {
+    width: 30%;
+  }
+  main .fonctionnement {
+    margin: 0 10%;
+  }
+  main .restaurants {
+    padding: 50px 10%;
+  }
+  main .restaurants .results {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .restaurants .results article {
+    width: 45%;
+    padding-bottom: 50px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer img {
+    max-height: 25px;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 4%;
+  }
+  .footer__nav {
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 60%;
+    padding-right: 4%;
+  }
+  .footer__links {
+    padding-right: 4%;
+  }
 }/*# sourceMappingURL=style.css.map */

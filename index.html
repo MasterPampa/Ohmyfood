@@ -13,29 +13,37 @@
     </head>
 	
 	<body>
-		<header class="flexCenter">
-			<img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
+		<header class="header flexCenter">
+			<a class="" href="#"><img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg"></a>
+			<nav class="navBar flexCenter">
+				<i class="fa-sharp fa-solid fa-location-dot"></i> 
+				<input class="navBar__searchBar" type="text" placeholder="Paris, Belleville">
+			</nav>
 		</header>
-		<nav class="navBar flexCenter">
-			<i class="fa-sharp fa-solid fa-location-dot"></i> 
-			<input class="navBar__searchBar" type="text" placeholder="Paris, Belleville">
-		</nav>
-		<article class="intro flexCenter">
+		<main>
+		<aside class="intro flexCenter">
 			<h1>Réservez le menu qui vous convient</h1>
 			<p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
 			<a href="#" class="button button--rounded button--pink flexCenter">Explorez nos restaurants</a>
-		</article>
+		</aside>
 		<section class="fonctionnement">
 			<h1 class="fonctionnement__title">Fonctionnement</h1>
 			<div class="menu flexCenter">
-				<a href="#" class="menu__button"><i class="icon fa-solid fa-mobile-screen-button" style="color: #7e7e7e;"></i>Choississez un restaurant</a>
-				<a href="#" class="menu__button"><i class="icon fa-solid fa-list" style="color: #7e7e7e;"></i>Composez votre menu</a>
-				<a href="#" class="menu__button"><i class="icon fa-solid fa-store" style="color: #9356DC;"></i>Dégustez au restaurant</a>
+				<article>
+					<a href="#" class="menu__button"><i class="icon fa-solid fa-mobile-screen-button" style="color: #7e7e7e;"></i>Choississez un restaurant</a>
+				</article>
+				<article>
+					<a href="#" class="menu__button"><i class="icon fa-solid fa-list" style="color: #7e7e7e;"></i>Composez votre menu</a>
+				</article>
+				<article>
+					<a href="#" class="menu__button"><i class="icon fa-solid fa-store" style="color: #9356DC;"></i>Dégustez au restaurant</a>
+				</article>	
 			</div>
 		</section>
 		<section class="restaurants">
 			<h1>Restaurants</h1>
 			<div class="results flexCenter">
+			<article>
 				<a href="#" class="cards">
 					<div class="cards__image">
 						<p class="cards__nouveau flexCenter">Nouveau</p>
@@ -52,6 +60,8 @@
 						<p>Ménilmontant</p>
 					</div>
 				</a>
+			</article>
+			<article>
 				<a href="#" class="cards">
 					<div class="cards__image">
 						<p class="cards__nouveau flexCenter">Nouveau</p>
@@ -68,6 +78,8 @@
 						<p>Charonne</p>
 					</div>
 				</a>
+			</article>
+			<article>
 				<a href="#" class="cards">
 					<div class="cards__image">
 						<img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du gout">
@@ -83,6 +95,8 @@
 						<p>Cité Rouge</p>
 					</div>
 				</a>
+			</article>
+			<article>
 				<a href="#" class="cards">
 					<div class="cards__image">
 						<img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du gout">
@@ -98,8 +112,10 @@
 						<p>Folie-Méricourt</p>
 					</div>
 				</a>
+			</article>
 			</div>
 		</section>
+		</main>
 		<footer class="footer">
 				<img src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
 				<div class="footer__nav">

@@ -16,7 +16,7 @@
 
 .fav {
   transition: 1s;
-  color: red;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   filter: opacity(0);
 }
 

@@ -33,34 +33,50 @@ body{
     margin: 0;
     font-family: Roboto;
 }
-header{
-    height: 63px;
-}
-.navBar{
-    height: 50px;
-    background-color: $greyBackground;
-    box-shadow: inset 0 8px 7px -7px rgba(0,0,0,0.15);
-    &__searchBar{
-        border: none;
-        background-color: $greyBackground;
+.header{
+    flex-direction: column;
+    height: 115px;
+    width: 100%;
+    a{
+        display: flex;
+        justify-content: center;
         width: 40%;
+        height: 60%;
+    }
+    .navBar{
+        width: 100%;
+        height: 40%;
+        background-color: $greyBackground;
+        box-shadow: inset 0 8px 7px -7px rgba(0,0,0,0.15);
+        &__searchBar{
+            width: 30%;
+            border: none;
+            background-color: $greyBackground;
         }
-    .fa-location-dot{
-        color: $darkGreyFont;
+        .fa-location-dot{
+            color: $darkGreyFont;
+        }
     }
 }
+
 .intro{
+    height: 287px;
     text-align: center;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: $lightGreyBackground;
     padding: 20px 30px 50px 30px;
     p{
+        font-size: 18px;
         color: $darkGreyFont;
         margin: 0;
         padding-bottom: 27px;
     }
+    h1{
+        font-size: 24px;
+    }
     .button{
-        width: 60%;
+        width: 218px;
         height: 50px;
         font-size: 16px;
         color: white;
@@ -83,8 +99,10 @@ header{
     .menu{
         flex-direction: column;
         margin-bottom: 40px;
+        article{
+            width: 100%;
+        }
         &__button{
-            width: 90%;
             height: 72px;
             display: flex;
             align-items: center;
@@ -192,6 +210,74 @@ header{
         padding-bottom: 7px;
         .icon{
             padding-right: 11px;
+        }
+    }
+}
+
+@media  (min-width: 768px) {
+    .header{
+        &__logo{
+            max-height: 34px;
+        }
+        .navBar{
+          &__searchBar{
+              width: 10%;
+           }
+      }
+    }
+    main{
+        .intro{
+            padding: 0px 20% 50px 20%;
+            height: 239px;
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .fonctionnement{
+            .menu{
+                flex-direction: row;
+                justify-content: space-between;
+                article{
+                    width: 30%;
+                }
+            }
+        }
+        .fonctionnement{
+            margin: 0 10%;
+        }
+        .restaurants{
+            padding: 50px 10% ;
+            .results{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                article{
+                    width: 45%;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+    .footer{
+        img{
+            max-height: 25px;
+            width: auto;
+            padding-top: 5px;
+            padding-right: 4%;
+        }
+        display: flex;
+        flex-direction: row-reverse;
+        &__nav{
+            justify-content: flex-end;
+            flex-direction: row;
+            width: 60%;
+            padding-right: 4%;
+        }
+        &__links{
+            padding-right: 4%;
         }
     }
 }
