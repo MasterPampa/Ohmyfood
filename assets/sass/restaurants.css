@@ -1,0 +1,124 @@
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header nav {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.header nav a {
+  color: black;
+}
+.header nav img {
+  max-height: 44px;
+}
+.header nav .icon {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+
+.menu {
+  margin-bottom: -50px;
+}
+.menu__photo {
+  width: 100%;
+  max-height: 450px;
+}
+.menu__block {
+  border-radius: 50px 50px 0 0;
+  background-color: #F7F7F7;
+  translate: 0px -50px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 5% 0px 5%;
+}
+.menu__block h1 {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.menu article {
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+.menu article h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+.menu article p {
+  margin: 0;
+  font-weight: 300;
+}
+.menu article .cards {
+  margin: 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu article .cards__details {
+  display: flex;
+  justify-content: space-between;
+}
+.menu article .cards__price {
+  font-weight: 700;
+  color: #353535;
+}
+.menu .button {
+  padding: 40px 0;
+  width: 100%;
+}
+.menu .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+  height: 50px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.footer {
+  padding: 22px 25px;
+  background-color: #353535;
+}
+.footer img {
+  filter: brightness(100);
+  width: 30%;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.footer__links {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 7px;
+}
+.footer__links .icon {
+  padding-right: 11px;
+}/*# sourceMappingURL=restaurants.css.map */
