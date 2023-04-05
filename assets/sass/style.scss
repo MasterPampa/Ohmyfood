@@ -27,6 +27,7 @@ $mainPurple:#9356DC;
     justify-content: space-between;
 }
 
+
 /* MobileFirst ###############################*/
 
 body{
@@ -226,6 +227,8 @@ body{
         }
     }
 }
+
+/* Responsive desktop *****************************************/
 
 @media  (min-width: 768px) {
     .header{

@@ -221,6 +221,7 @@ body {
   padding-right: 11px;
 }
 
+/* Responsive desktop *****************************************/
 @media (min-width: 768px) {
   .header {
     height: 150px;

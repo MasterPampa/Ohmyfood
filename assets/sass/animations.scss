@@ -6,21 +6,22 @@
         box-shadow: 0px 4px 15px rgba(0,0,0,0.35);
     }
 }
-
-.pos{
-    &:hover > .fav{
-        filter: opacity(100);
-    }
-    &:hover > .notFav{
-        filter: opacity(0);
-    }
+.fa-heart {
+  position: absolute;
+  right: 8%;
+  font-size: 2rem;
+}  
+.heart_solid {
+  color: transparent;
+  background-clip: text;
+  opacity: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.fav{
-    transition: 1s;
-    background-image: linear-gradient(#FF79DA, #9356DC);
-    filter: opacity(0);
-}
-.notFav{
-    transition: 1s;
-    filter: opacity(100);
+.heart_solid:hover {
+  transition: all 0.4s;
+  opacity: 1;
+  background: -webkit-linear-gradient(#9356DC, #ae76f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
