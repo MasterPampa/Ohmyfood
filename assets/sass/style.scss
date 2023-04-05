@@ -49,7 +49,7 @@ body{
         background-color: $greyBackground;
         box-shadow: inset 0 8px 7px -7px rgba(0,0,0,0.15);
         &__searchBar{
-            width: 30%;
+            min-width: 30%;
             border: none;
             background-color: $greyBackground;
         }
@@ -65,7 +65,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: $lightGreyBackground;
-    padding: 20px 30px 50px 30px;
+    padding: 10px 30px 30px 30px;
     p{
         font-size: 18px;
         color: $darkGreyFont;
@@ -76,8 +76,9 @@ body{
         font-size: 24px;
     }
     .button{
+        position: relative;
         width: 218px;
-        height: 50px;
+        min-height: 50px;
         font-size: 16px;
         color: white;
         text-decoration: none;            
@@ -96,11 +97,23 @@ body{
         margin-top: 48px;
         margin-bottom: 26px;
     }
-    .menu{
+    .guide{
         flex-direction: column;
         margin-bottom: 40px;
         article{
             width: 100%;
+        }
+        &__number{
+            height: 24px;
+            min-width: 24px;
+            border-radius: 50px;
+            background-color: $mainPurple;
+            color: white;
+            position: relative;
+            left: -10px;
+        }
+        p{
+            padding-right: 10px;
         }
         &__button{
             height: 72px;
@@ -216,12 +229,16 @@ body{
 
 @media  (min-width: 768px) {
     .header{
-        &__logo{
+        height: 150px;
+        a{
+            align-items: center;
+            img{
             max-height: 34px;
         }
+    }
         .navBar{
           &__searchBar{
-              width: 10%;
+              min-width: 8%;
            }
       }
     }
@@ -237,7 +254,7 @@ body{
             }
         }
         .fonctionnement{
-            .menu{
+            .guide{
                 flex-direction: row;
                 justify-content: space-between;
                 article{
