@@ -29,16 +29,18 @@ body {
 }
 .header nav .icon {
   position: absolute;
-  top: 3%;
+  top: 35px;
   left: 5%;
 }
 
 .menu {
+  position: relative;
   margin-bottom: -50px;
 }
 .menu__photo {
   width: 100%;
-  max-height: 450px;
+  height: 17rem;
+  object-fit: cover;
 }
 .menu__block {
   border-radius: 50px 50px 0 0;
@@ -50,6 +52,7 @@ body {
 }
 .menu__block h1 {
   font-family: "Shrikhand", cursive;
+  font-weight: 400;
   margin: 0;
   font-size: 28px;
   margin-bottom: 30px;
@@ -121,4 +124,14 @@ body {
 }
 .footer__links .icon {
   padding-right: 11px;
+}
+
+/* Design Responsive des restaurants */
+@media (min-width: 768px) {
+  .menu__title {
+    text-align: center;
+  }
+  .menu__block {
+    margin: 0 15%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */

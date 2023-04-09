@@ -32,10 +32,12 @@ body{
     }
   }
 .menu{
+    position: relative;
     margin-bottom: -50px;
     &__photo{
         width: 100%;
-        max-height: 450px;
+        height: 17rem;
+        object-fit: cover;
     }
     &__block{
         border-radius: 50px 50px 0 0;
@@ -118,5 +120,17 @@ body{
         .icon{
             padding-right: 11px;
         }
+    }
+}
+
+/* Design Responsive des restaurants */
+
+@media  (min-width: 768px) {
+
+    .menu__title{
+        text-align: center;
+    }
+    .menu__block {
+        margin:0 15%;
     }
 }
