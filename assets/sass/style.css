@@ -1,4 +1,26 @@
 /* General settings #######################################*/
+.mainButton {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  position: relative;
+  width: 218px;
+  min-height: 50px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+.mainButton--rounded {
+  border-radius: 25px;
+  border: none;
+}
+.mainButton--pink {
+  background: linear-gradient(1deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.mainButton:hover {
+  filter: brightness(115%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
 ::placeholder {
   color: #353535;
   font-size: 16px;
@@ -66,21 +88,6 @@ body {
 }
 .intro h1 {
   font-size: 24px;
-}
-.intro .button {
-  position: relative;
-  width: 218px;
-  min-height: 50px;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
-.intro .button--rounded {
-  border-radius: 25px;
-  border: none;
-}
-.intro .button--pink {
-  background: linear-gradient(1deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .fonctionnement {
