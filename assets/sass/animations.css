@@ -40,4 +40,8 @@
   opacity: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+article:hover .check__mark {
+  margin-right: 0px;
 }/*# sourceMappingURL=animations.css.map */
