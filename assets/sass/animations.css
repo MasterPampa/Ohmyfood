@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
@@ -44,4 +45,41 @@
 
 article:hover .check__mark {
   margin-right: 0px;
+}
+
+.menu_entrées article {
+  opacity: 0;
+  margin-top: 50px;
+  animation-name: fading;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu_plats article {
+  opacity: 0;
+  margin-top: 50px;
+  animation-delay: 400ms;
+  animation-name: fading;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu_desserts article {
+  opacity: 0;
+  margin-top: 50px;
+  animation-delay: 800ms;
+  animation-name: fading;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=animations.css.map */
