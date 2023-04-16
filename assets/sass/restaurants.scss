@@ -102,11 +102,18 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            overflow: hidden;
             &__details{
                 display: flex;
-                flex-direction: row;
                 justify-content: space-between;
-                width: 100%;
+                p{
+                    text-align: end;
+                    min-width: 30px;
+                    max-width: 360px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
                 .cards__price{
                     font-weight: 700;
                     color:#353535;
@@ -115,7 +122,6 @@ body{
         }
         .check__mark{
             width: 59px;
-            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -131,27 +137,7 @@ body{
         margin: 40px; 
     }
 }
-.footer{
-    padding: 22px 25px;
-    background-color: #353535;
-    img{
-        filter: brightness(100);
-        width: 30%;
-    }
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-    &__links{
-        color: white;
-        text-decoration: none;
-        padding-bottom: 7px;
-        .icon{
-            padding-right: 11px;
-        }
-    }
-}
+
 
 /* Design Responsive des restaurants */
 
@@ -162,26 +148,5 @@ body{
     }
     .menu__block {
         margin:0 15%;
-    }
-    .footer{
-        img{
-            max-height: 25px;
-            width: auto;
-            padding-top: 5px;
-            padding-right: 4%;
-        }
-        align-items: flex-end;
-        height: 114px;
-        display: flex;
-        flex-direction: row-reverse;
-        &__nav{
-            justify-content: flex-end;
-            flex-direction: row;
-            width: 60%;
-            padding-right: 4%;
-        }
-        &__links{
-            padding-right: 4%;
-        }
     }
 }

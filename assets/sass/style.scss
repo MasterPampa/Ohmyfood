@@ -118,6 +118,12 @@ body{
             position: relative;
             left: -10px;
         }
+        .fa-mobile-screen-button, .fa-list{
+            color: #7E7E7E;
+        }
+        .fa-store{
+            color: $mainPurple;
+        }
         p{
             padding-right: 10px;
         }
@@ -211,27 +217,6 @@ body{
         }
     }
 }
-.footer{
-    padding: 22px 25px;
-    background-color: $darkGreyFont;
-    img{
-        filter: brightness(100);
-        width: 30%;
-    }
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-    &__links{
-        color: white;
-        text-decoration: none;
-        padding-bottom: 7px;
-        .icon{
-            padding-right: 11px;
-        }
-    }
-}
 
 /* Responsive desktop *****************************************/
 
@@ -284,25 +269,6 @@ body{
                     padding-bottom: 50px;
                 }
             }
-        }
-    }
-    .footer{
-        img{
-            max-height: 25px;
-            width: auto;
-            padding-top: 5px;
-            padding-right: 4%;
-        }
-        display: flex;
-        flex-direction: row-reverse;
-        &__nav{
-            justify-content: flex-end;
-            flex-direction: row;
-            width: 60%;
-            padding-right: 4%;
-        }
-        &__links{
-            padding-right: 4%;
         }
     }
 }
