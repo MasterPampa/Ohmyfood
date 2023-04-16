@@ -1,120 +1,146 @@
 $mainPurple:#9356DC;
 .loader{
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
-    z-index: 999;
+    z-index: 988;
+    opacity: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    animation: hide 1s ease-in-out 3s forwards;
+    animation-name: loaderEnd;
+    animation-delay: 3s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
     &__logo{
-        position: absolute;
-        z-index: 9;
-        filter: brightness(0);
-        opacity: 0;
-        animation: logo 2s ease-in-out 1.5s forwards;
+        position:absolute;
         width: 40%;
+        top: 50%;
+        opacity: 1;
+        animation-name: logoHide;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
     &__logo2{
         position: absolute;
-        z-index: 9;
         width: 40%;
+        top: 50%;
+        z-index: 989;
+        opacity: 0;
+        animation-name: logoReveal;
+        animation-delay: 1.5s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
     }
 }
-.purpleSquare{
+.square {
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    width: 100vh;
+    height: 100vh;
     background-color: $mainPurple;
-    width: 400%;
-    height: 400%;
-    rotate: 45deg;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: slideRight 1.5s ease-in-out forwards;
+    z-index: 990;
+  }
+  .square2 {
     position: absolute;
-    left: -5500px;
-    animation-name: slide;
-    animation-duration: 4s;
-    transition: all ease-in-out;
-    animation-fill-mode: forwards;
-    z-index: 10;
-}
-.whiteSquare{
+    top: 50%;
+    left: -150%;
+    width: 100vh;
+    height: 100vh;
     background-color: white;
-    width: 400%;
-    height: 400%;
-    rotate: 45deg;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay:0.2s ;
+    z-index: 991;
+  }
+  .square3 {
     position: absolute;
-    left: -5500px;
-    animation-name: white;
-    animation-duration: 4s;
-    animation-delay: 0.2s;
-    transition: all ease-in;
-    animation-fill-mode: forwards;
-    z-index: 11;
-}
-.purpleSquare2{
+    top: 50%;
+    left: -150%;
+    width: 100vh;
+    height: 100vh;
     background-color: $mainPurple;
-    width: 400%;
-    height: 400%;
-    rotate: 45deg;
-    position: absolute;
-    left: -5500px;
-    animation-name: slide;
-    animation-delay: 0.3s;
-    animation-duration: 4s;
-    transition: all ease-in;
-    animation-fill-mode: forwards;
-    z-index: 12;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay:0.3s ;
+    z-index: 992;
 }
-.whiteSquare2{
+  .square4 {
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    width: 100vh;
+    height: 100vh;
     background-color: white;
-    width: 400%;
-    height: 400%;
-    rotate: 45deg;
-    position: absolute;
-    left: -5500px;
-    animation-name: white;
-    animation-duration: 4s;
-    animation-delay: 0.5s;
-    transition: all ease-in;
-    animation-fill-mode: forwards;
-    z-index: 13;
-}
-@keyframes slide{
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: slideRight 1.5s ease-in-out forwards;
+    animation-delay:0.5s ;
+    z-index: 993;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      left: -150%;
+    }
+    100% {
+      left: 250%;
+    }
+  }
+  @keyframes logoHide{
     from{
-        left: -5500px;
+        opacity: 1;
     }
     to{
-        left: 2500px;
+        opacity: 0;
     }
-}
-@keyframes white{
+  }
+  @keyframes logoReveal{
     from{
-        left: -5500px;
+        opacity: 0;
     }
     to{
-        left: 2500px;
+        opacity: 1;
     }
-}
-@keyframes logo{
+  }
+  @keyframes loaderEnd{
     0%{
-        z-index: 9;
+        opacity: 1;
+        z-index: 988;
+    }
+    75%{
         opacity: 0;
     }
     100%{
-        z-index: 15;
-        opacity: 1;
-    }
-}
-@keyframes hide{
-    from{
-        z-index: 999;
-        opacity: 1;
-    }
-    to{
-        z-index: -500;
         opacity: 0;
+        z-index: -500;
+    }
+  }
+  @media (min-width: 768px) {
+    .loader{
+        &__logo{
+            width: 20%;
+        }
+        &__logo2{
+            width: 20%;
+        }
+    }
+    .square{
+        width: 200vh;
+        height: 200vh;
+    }
+    .square2{
+        width: 200vh;
+        height: 200vh;
+    }
+    .square3{
+        width: 200vh;
+        height: 200vh;
+    }
+    .square4{
+        width: 200vh;
+        height: 200vh;
     }
 }
