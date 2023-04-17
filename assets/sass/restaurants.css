@@ -23,6 +23,8 @@ body {
 }
 .header nav a {
   color: black;
+  display: flex;
+  justify-content: center;
 }
 .header nav img {
   max-height: 44px;

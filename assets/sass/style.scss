@@ -58,11 +58,13 @@ body{
     flex-direction: column;
     height: 115px;
     width: 100%;
-    a{
-        display: flex;
-        justify-content: center;
-        width: 40%;
-        height: 60%;
+    nav{
+        a{
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            height: 60%;
+        }
     }
     .navBar{
         width: 100%;

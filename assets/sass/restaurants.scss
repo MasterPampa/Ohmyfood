@@ -22,6 +22,8 @@ body{
         align-items: center;
         a{
             color: black;
+            display: flex;
+            justify-content: center;
         }
         img{
             max-height: 44px;
