@@ -9,6 +9,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
 .menu {
   position: relative;
   margin-bottom: -50px;
@@ -120,5 +126,10 @@ body {
   }
   .menu__block {
     margin: 0 15%;
+  }
+  .fa-arrow-left {
+    position: absolute;
+    top: 45px;
+    left: 45px;
   }
 }/*# sourceMappingURL=restaurants.css.map */
