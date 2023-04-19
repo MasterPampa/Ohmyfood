@@ -1,0 +1,21 @@
+$darkGreyFont:#353535;
+$lightGreyBackground:#F7F7F7;
+$greyBackground:#EAEAEA;
+$mainPurple:#9356DC;
+@mixin gradientBackground{
+    background: linear-gradient(1deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+  
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 100%;
+}
+
+@media  (min-width: 768px) {
+    .header{
+        height: 95px;
+    }
+}

@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 95px;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -54,31 +54,19 @@ body{
     margin: 0;
     font-family: Roboto;
 }
-.header{
-    flex-direction: column;
-    height: 115px;
+
+.navBar{
     width: 100%;
-    nav{
-        a{
-            display: flex;
-            justify-content: center;
-            width: 40%;
-            height: 60%;
-        }
-    }
-    .navBar{
-        width: 100%;
-        height: 40%;
+    height: 50px;
+    background-color: $greyBackground;
+    box-shadow: inset 0 8px 7px -7px rgba(0,0,0,0.15);
+    &__searchBar{
+        min-width: 30%;
+        border: none;
         background-color: $greyBackground;
-        box-shadow: inset 0 8px 7px -7px rgba(0,0,0,0.15);
-        &__searchBar{
-            min-width: 30%;
-            border: none;
-            background-color: $greyBackground;
-        }
-        .fa-location-dot{
-            color: $darkGreyFont;
-        }
+    }
+    .fa-location-dot{
+        color: $darkGreyFont;
     }
 }
 
@@ -223,19 +211,10 @@ body{
 /* Responsive desktop *****************************************/
 
 @media  (min-width: 768px) {
-    .header{
-        height: 150px;
-        a{
-            align-items: center;
-            img{
-            max-height: 34px;
-        }
-    }
-        .navBar{
-          &__searchBar{
-              min-width: 8%;
-           }
-      }
+    .navBar{
+        &__searchBar{
+            min-width: 8%;
+         }
     }
     main{
         .intro{
