@@ -4,11 +4,7 @@
   justify-content: center;
   height: 65px;
   width: 100%;
-  .icon{
-    
-  }
 }
-
 
 @media (min-width: 768px) {
   .header {

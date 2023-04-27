@@ -30,18 +30,19 @@
 }  
 .heart_solid {
   color: transparent;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   opacity: 0;
   transition: all 0.4s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.heart_solid:active {
+.heart_solid:hover, .heart_solid:active {
   opacity: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 article:hover .check__mark{
   margin-right: 0px;
 }
